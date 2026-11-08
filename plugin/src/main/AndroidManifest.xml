@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- No permission: the card is Google Play's, shown by the Play Store app. -->
+    <application>
+        <!-- Godot finds a v2 plugin by this entry: the name after the prefix is the singleton's, the value the class that is the plugin. -->
+        <meta-data
+            android:name="org.godotengine.plugin.v2.${godotPluginName}"
+            android:value="${godotPluginPackageName}.PlayReviewPlugin" />
+    </application>
+
+</manifest>

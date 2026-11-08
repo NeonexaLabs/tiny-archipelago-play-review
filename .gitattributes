@@ -1,0 +1,9 @@
+# Normalise line endings of the text files.
+* text=auto eol=lf
+*.aar binary
+*.jar binary
+
+# The release asset addons.zip is `git archive` of the tag: only the addons/ folder goes into it.
+/**        export-ignore
+/addons    !export-ignore
+/addons/** !export-ignore
